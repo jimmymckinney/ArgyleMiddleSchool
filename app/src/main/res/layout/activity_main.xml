@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AB47BC"
+    tools:context="com.example.android.argylemiddleschool.MainActivity">
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/banner"
+        android:scaleType="fitStart"
+        android:adjustViewBounds="true"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#BA68C8"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:text="We develop a positive, creative, and diverse learning environment, where technology is fully integrated into the curriculum. We are firmly committed to fostering respectful, responsible students who are reflective. As a result, staff and parents work together to create a climate of high expectations, ensuring the success of every student."
+        android:layout_below="@id/banner"
+        android:padding="8dp"/>
+
+    <ImageView
+        android:id="@+id/linkicon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/link"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:id="@+id/website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
+        android:autoLink="web"
+        android:text="www.argylems.org"
+        android:layout_toRightOf="@id/linkicon"
+        android:layout_marginBottom="2dp"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageView
+        android:id="@+id/homeicon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/home"
+        android:layout_above="@id/linkicon"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:text="2400 Bel Pre Road \nSilver Spring, MD 20906"
+        android:layout_toRightOf="@id/homeicon"
+        android:layout_above="@id/website"
+        android:layout_marginBottom="2dp"/>
+
+    <ImageView
+        android:id="@+id/phoneicon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/phone"
+        android:layout_above="@id/address"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="2dp" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(301) 460-2400"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:layout_toRightOf="@id/phoneicon"
+        android:layout_above="@id/address"
+        android:layout_marginTop="2dp"/>
+
+    <ImageView
+        android:id="@+id/timeicon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/time"
+        android:layout_above="@id/phoneicon"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:text="8:15-3:00"
+        android:layout_toRightOf="@id/timeicon"
+        android:layout_above="@id/phone"
+        android:layout_marginTop="2dp" />
+
+</RelativeLayout>
